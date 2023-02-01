@@ -39,6 +39,19 @@
 
    https://172.20.227.15:32000
 
+## Redirección mediante la IP pública
+
+Si solo tenemos acceso al cluster mediante la IP pública del master, podemos crear un túnel SSH al puerto del Dashboard
+haciendo:
+
+```
+ssh -L 9999:127.0.0.1:32000 -N -f -l root $(docker compose run --rm terraform-ansible terraform -chdir=/terraform output -raw master_connection_ip)
+```
+
+Y acceder a:
+
+https://localhost:9999
+
 ## Referencias
 
 - https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
