@@ -28,8 +28,8 @@ spec:
       image: alpine:latest
       command: [ "/bin/sh", "-c" ]
       args:
-        - if [ ! -f /html/index.html ]; then date > /html/index.html; fi;
-          while true; do
+        - while true; do
+          date > /html/index.html;
           sleep 5;
           done
       volumeMounts:
