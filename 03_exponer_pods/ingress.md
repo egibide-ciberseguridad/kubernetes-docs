@@ -33,7 +33,7 @@
 3. Acceder al balanceador:
 
     ```
-    make ssh-ha
+    make ssh node=kube-haproxy
     ```
 
 4. Comprobar que tengamos comunicación con el cluster:
