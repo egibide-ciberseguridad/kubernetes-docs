@@ -50,7 +50,7 @@ spec:
       http:
         paths:
           - path: /
-            pathType: Prefix
+            pathType: Prefix  # Exact
             backend:
               service:
                 name: app
