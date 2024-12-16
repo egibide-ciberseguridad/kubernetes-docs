@@ -46,7 +46,7 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: demo-06.ciber-egibide.eu
+    - host: ciber-99.arriaga.eu
       http:
         paths:
           - path: /
