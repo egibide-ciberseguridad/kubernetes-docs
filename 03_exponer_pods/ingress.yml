@@ -44,6 +44,7 @@ kind: Ingress
 metadata:
   name: test-ingress
 spec:
+  ingressClassName: haproxy
   rules:
     - host: ciber-99.arriaga.eu
       http:
