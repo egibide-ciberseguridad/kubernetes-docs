@@ -34,7 +34,7 @@ spec:
   selector:
     run: app
   ports:
-    - name: port-1
+    - name: http
       port: 80
       protocol: TCP
       targetPort: 80
@@ -54,4 +54,4 @@ spec:
               service:
                 name: app
                 port:
-                  number: 80
+                  name: http
